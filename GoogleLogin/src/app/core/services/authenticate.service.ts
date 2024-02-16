@@ -15,6 +15,7 @@ export class AuthenticateService extends BaseService {
 
   private currentUserSubject = new BehaviorSubject<UserToken>({} as UserToken);
   public currentUser = this.currentUserSubject.asObservable();
+  public jwtToken : string;
 
   constructor(httpClient: HttpClient, private jwtService: JwtService, private router: Router) {
     super(httpClient);
@@ -26,6 +27,7 @@ export class AuthenticateService extends BaseService {
       .post<UserToken>(`${this.baseUrl}/api/auth/googleauthenticate`, googleUser)
       .pipe(map(profile => {
         this.setAuth(profile);
+        this.jwtToken = profile.token; 
         return profile;
       }))
   }

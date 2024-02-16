@@ -14,12 +14,16 @@ import { SocialLoginModule, SocialAuthServiceConfig, GoogleSigninButtonModule } 
 import { GoogleLoginProvider } from '@abacritt/angularx-social-login';
 import { environment } from '../environments/environment';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { WeatherForecastComponent } from './weather-forecast/weather-forecast.component';
+import { SsohomeComponent } from './ssohome/ssohome.component';
 /*end google login*/
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    WeatherForecastComponent,
+    SsohomeComponent
   ],
   imports: [
     BrowserModule,
