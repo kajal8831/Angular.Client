@@ -6,7 +6,10 @@
 export const environment = {
   production: false,
   baseUrl: 'https://localhost:44329',
-  googleClientId: "48264630350-82bchn0iu1i4sghje30a95uv5d6igsbk.apps.googleusercontent.com",
+  //kajal
+  // googleClientId: "48264630350-82bchn0iu1i4sghje30a95uv5d6igsbk.apps.googleusercontent.com",
+  // swap
+  googleClientId: "343799499678-v3pi94j3r1sj8v6a3msdti68ls9tje7b.apps.googleusercontent.com",
 };
 
 /*
